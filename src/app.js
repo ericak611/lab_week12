@@ -18,7 +18,7 @@ const students = [
     for (const number of average.grades){
        overallGPA += number
     }
-    const averageGPA = overallGPA / average.grades.length
+    const averageGPA = overallGPA / 4
     if (averageGPA > 80){
      const scholarshipStudent = { name: average.name, gradeAvg: averageGPA}
      studentsGetScholarship.push(scholarshipStudent)
@@ -36,3 +36,9 @@ function studentsWhoQualify (students){
   return studentsGetScholarship
 }
 console.log(studentsWhoQualify(students))
+
+//part4
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-theme");
+  } 
